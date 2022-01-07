@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+ * {
+	 box-sizing: border-box;
+}
+ *::before, *::after {
+	 box-sizing: border-box;
+}
+
+ .container {
+     text-align: center;
+
+}
+
+ .accordion .accordion-item button[aria-expanded='true'] {
+
+}
+ .accordion button {
+	 position: relative;
+	 text-align: left;
+	 width: 50%;
+	 padding: 1em 0;
+	 background-color: #24D1DD !important;
+	 font-size: 100%;
+	 font-weight: 400;
+	 border-radius: 15px;
+	 background: none;
+	 outline: none;
+	 border-width: 1px;
+     margin-top: 2%;
+     animation: glow infinite;
+	 font-family: "EzraBlack";
+	      border-color: #3F3D56 !important;
+}
+ .accordion button:hover, .accordion button:focus {
+	 cursor: pointer;
+}
+ .accordion button:hover::after, .accordion button:focus::after {
+	 cursor: pointer;
+}
+ .accordion button .accordion-title {
+	 padding: 1em 1.5em 1em 0;
+     margin-left: 2%;
+	 font-size: 100%;
+	 color: white;
+	 font-family: Montserrat;
+
+}
+ .accordion button .icon {
+	 display: inline-block;
+	 position: absolute;
+	 top: 18px;
+	 right: 10px;
+	 width: 22px;
+	 height: 22px;
+	 border-radius: 22px;
+	 color: #3F3D56;
+}
+ .accordion button .icon::before {
+	 display: block;
+	 position: absolute;
+	 content: '';
+	 top: 9px;
+	 left: 5px;
+	 width: 10px;
+	 height: 2px;
+	 background: currentColor;
+}
+ .accordion button .icon::after {
+	 display: block;
+	 position: absolute;
+	 content: '';
+	 top: 5px;
+	 left: 9px;
+	 width: 2px;
+	 height: 10px;
+	 background: currentColor;
+}
+ .accordion button[aria-expanded='true'] {
+	 color:;
+}
+ .accordion button[aria-expanded='true'] .icon::after {
+	 width: 0;
+}
+ .accordion button[aria-expanded='true'] + .accordion-content {
+	 opacity: 1;
+	 max-height: 9em;
+	 transition: all 200ms linear;
+	 will-change: opacity, max-height;
+}
+ .accordion .accordion-content {
+	 opacity: 0;
+	 max-height: 0;
+	 overflow: hidden;
+	 transition: opacity 200ms linear, max-height 200ms linear;
+	 will-change: opacity, max-height;
+}
+ .accordion .accordion-content p {
+	 font-size: 100%;
+	 font-weight: 300;
+	 margin: 2em 0;
+     color:#3F3D56;
+	 padding-left: 30%;
+	 padding-right: 30%;
+	 text-align: left;
+}
+ 
+#faq h1{
+    color: white;
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size: 200%;
+    font-family:"EzraBlack";
+}
+
+#faq p1{
+    color: #91F086;
+    font-size: 150%;
+    font-family: "Grover";
+}
+
+#faq {
+    text-align: center;
+}

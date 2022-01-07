@@ -1,0 +1,220 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 0.001fr 0.8fr 0.5fr 0.4fr 0.09fr 0.09fr 0.1fr 0.3fr 0.1fr 1.5fr 0.1fr 1fr 0.1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sec sec sec sec"
+    "top top toplogo toplogo"
+    "about about about about"
+    "stepimg stepimg stepimg stepimg"
+    "s11 s21 s31 s41"
+    "s12 s22 s32 s42"
+    "s13 s23 s33 s43"
+    "utility utility utility utility"
+    "img img img img"
+    "faq faq faq faq"
+    "team team team team"
+    "team1 team1 team2 team2" 
+    "social social social social";
+    font-family: Montserrat;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo{
+    grid-area:logo;
+    padding: 3%;
+}
+.logo img{
+    padding: 3%;
+}
+#nav{
+    grid-area:nav;
+}
+.top{
+    background-color: #24D1DD;
+    grid-area:top;
+    padding: 20%;
+    padding-top: 30%;
+}
+.toplogo{
+    background-color: #24D1DD;
+    grid-area:toplogo;
+    padding: 2%;
+    padding-top: 10%;
+    text-align: center;
+}
+.about{
+    grid-area:about;
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#stepimg{
+    grid-area:stepimg;
+    text-align: center;
+    background-image: url(images/Path\ 322.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.step{
+    grid-area:step;
+    text-align: center;
+    background-color: #24D1DD;
+    padding-top: 15%;
+}
+.step1{
+    grid-area:step1;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.step2{
+    grid-area:step2;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.step3{
+    grid-area:step3;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.step4{
+    grid-area:step4;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}
+.step4 img{
+    width: 20% !important;
+}
+.utility{
+    grid-area:utility;
+    padding: 10%;
+    font-size: 150%;
+    text-align: center;
+    background-color: #24D1DD;
+
+
+}
+.faq{
+    grid-area:faq;
+    text-align: center;
+}
+.team{
+    grid-area: team;
+    text-align: center;
+}
+.team1{
+    grid-area: team1;
+    text-align: center;
+    padding:10%;
+    padding-top:5% !important;
+}
+.team2{
+    grid-area: team2;
+    text-align: center;
+    padding:10%;
+    padding-top:5% !important;
+}
+.img {
+    grid-area: img;
+    text-align: center;
+}
+.social{
+    grid-area: social;
+    text-align: center;
+}
+.s11{
+    grid-area: s11;
+    text-align: center;
+    padding-top: 20%;
+
+}
+.s12{
+    grid-area: s12;
+    text-align: center;
+
+}
+.s13{
+    grid-area: s13;
+    text-align: center;
+
+}
+.s21{
+    grid-area: s21;
+    text-align: center;
+    padding-top: 20%;
+
+
+}
+.s22{
+    grid-area: s22;
+    text-align: center;
+
+}
+.s23{
+    grid-area: s23;
+    text-align: center;
+    padding-bottom: 20%;
+
+}
+.s31{
+    grid-area: s31;
+    text-align: center;
+    padding-top: 20%;
+
+
+}
+.s32{
+    grid-area: s32;
+    text-align: center;
+
+}
+.s33{
+    grid-area: s33;
+    text-align: center;
+    padding-bottom: 20%;
+
+}
+.s41{
+    grid-area: s41;
+    text-align: center;
+    padding-top: 20%;
+    
+
+}
+.s41 img{
+    margin-top: -5% !important; 
+}
+.s42{
+    grid-area: s42;
+    text-align: center;
+
+}
+.s43{
+    grid-area: s43;
+    text-align: center;
+    padding-bottom: 20%;
+}
+#sec{
+    display: none;
+    grid-area: sec;
+}
